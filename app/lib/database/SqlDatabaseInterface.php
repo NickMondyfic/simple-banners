@@ -15,11 +15,10 @@ interface SqlDatabaseInterface
 
     /**
      * @param string $sql
-     * @param bool $fetchColumn
      *
      * @return mixed
      */
-    function fetchOne(string $sql, bool $fetchColumn = false): mixed;
+    function fetchOne(string $sql): mixed;
 
     /**
      * @param string $sql

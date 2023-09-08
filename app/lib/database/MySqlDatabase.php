@@ -92,11 +92,10 @@ class MySqlDatabase implements SqlDatabaseInterface, DatabaseInterface
 
     /**
      * @param string $sql
-     * @param bool $fetchColumn
      *
      * @return mixed
      */
-    function fetchOne(string $sql, bool $fetchColumn = false): mixed
+    function fetchOne(string $sql): mixed
     {
         return $this->pdo()->query($sql)->fetch(PDO::FETCH_ASSOC);
     }
