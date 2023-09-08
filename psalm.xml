@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="2"
+    phpVersion="8.2"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    autoloader="psalm.php"
+    findUnusedBaselineEntry="false"
+    findUnusedCode="false"
+>
+    <projectFiles>
+        <directory name="app" />
+        <directory name="public" />
+        <ignoreFiles>
+            <file name="public/adminer.php" />
+        </ignoreFiles>
+    </projectFiles>
+</psalm>
